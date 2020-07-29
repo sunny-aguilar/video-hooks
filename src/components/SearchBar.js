@@ -6,7 +6,7 @@ const SearchBar = () => {
 
   // what happens when you type into input element (controlled element)
   const onInputChange = (event) => {
-    this.setState({ term: event.target.value });
+    setTerm(event.target.value);
   };
 
   // when form is submitted
