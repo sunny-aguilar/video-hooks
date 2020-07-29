@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SearchBar.css";
 
 const SearchBar = () => {
-  
+  const [term, setTerm] = useState("");
 };
 
 class SearchBar extends React.Component {
