@@ -4,8 +4,6 @@ import "./SearchBar.css";
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState("");
 
-
-
   // when form is submitted
   const onSubmit = (event) => {
     event.preventDefault(); // prevents page from refreshing
