@@ -13,7 +13,7 @@ const SearchBar = ({ onFormSubmit }) => {
   const onSubmit = (event) => {
     event.preventDefault(); // prevents page from refreshing
 
-    onFormSubmit(state.term);
+    onFormSubmit(term);
   };
 };
 
