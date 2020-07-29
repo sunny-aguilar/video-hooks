@@ -5,12 +5,12 @@ const SearchBar = () => {
   const [term, setTerm] = useState("");
 
   // what happens when you type into input element (controlled element)
-  onInputChange = (event) => {
+  const onInputChange = (event) => {
     this.setState({ term: event.target.value });
   };
 
   // when form is submitted
-  onFormSubmit = (event) => {
+  const onFormSubmit = (event) => {
     event.preventDefault(); // prevents page from refreshing
     // TODO: make sure we call callback from parent component
     this.props.onFormSubmit(this.state.term);
