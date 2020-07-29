@@ -34,15 +34,4 @@ const SearchBar = ({ onFormSubmit }) => {
   );
 };
 
-class SearchBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { term: "" };
-  }
-
-  render() {
-    
-  }
-}
-
 export default SearchBar;
