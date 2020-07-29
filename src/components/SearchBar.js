@@ -12,7 +12,8 @@ const SearchBar = ({ onFormSubmit }) => {
   // when form is submitted
   const onSubmit = (event) => {
     event.preventDefault(); // prevents page from refreshing
-    this.props.onFormSubmit(this.state.term);
+
+    onFormSubmit(state.term);
   };
 };
 
