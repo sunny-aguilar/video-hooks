@@ -37,7 +37,6 @@ const SearchBar = ({ onFormSubmit }) => {
       </div>
     </div>
   );
-
 };
 
 class SearchBar extends React.Component {
