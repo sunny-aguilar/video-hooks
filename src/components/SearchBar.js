@@ -3,13 +3,6 @@ import "./SearchBar.css";
 
 const SearchBar = () => {
   const [term, setTerm] = useState("");
-};
-
-class SearchBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { term: "" };
-  }
 
   // what happens when you type into input element (controlled element)
   onInputChange = (event) => {
@@ -22,6 +15,15 @@ class SearchBar extends React.Component {
     // TODO: make sure we call callback from parent component
     this.props.onFormSubmit(this.state.term);
   };
+};
+
+class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { term: "" };
+  }
+
+  
 
   render() {
     // onChange() is a special property name that must be named this way to
