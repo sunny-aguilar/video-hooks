@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState("");
 
   // what happens when you type into input element (controlled element)
@@ -10,9 +10,8 @@ const SearchBar = () => {
   };
 
   // when form is submitted
-  const onFormSubmit = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault(); // prevents page from refreshing
-    // TODO: make sure we call callback from parent component
     this.props.onFormSubmit(this.state.term);
   };
 };
