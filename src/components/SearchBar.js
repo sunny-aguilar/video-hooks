@@ -20,7 +20,7 @@ const SearchBar = ({ onFormSubmit }) => {
   // invoke it
   return (
     <div className="search-bar ui segment">
-      <form className="ui form" onSubmit={}>
+      <form className="ui form" onSubmit={onSubmit}>
         <div className="field">
           <label>Video Search</label>
           <input
