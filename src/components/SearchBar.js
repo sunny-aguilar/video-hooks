@@ -4,10 +4,7 @@ import "./SearchBar.css";
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState("");
 
-  // what happens when you type into input element (controlled element)
-  const onInputChange = (event) => {
-    setTerm(event.target.value);
-  };
+
 
   // when form is submitted
   const onSubmit = (event) => {
@@ -26,7 +23,7 @@ const SearchBar = ({ onFormSubmit }) => {
           <input
             type="text"
             value={term}
-            onChange={onInputChange}
+            onChange={(event) => setTerm(event.target.value)}
           />
         </div>
       </form>
