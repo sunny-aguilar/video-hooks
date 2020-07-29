@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
 
+const SearchBar = () => {
+  
+};
+
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
