@@ -23,30 +23,8 @@ class SearchBar extends React.Component {
     this.state = { term: "" };
   }
 
-  
-
   render() {
-    // onChange() is a special property name that must be named this way to
-    // invoke it
-    return (
-      <div className="search-bar ui segment">
-        <form className="ui form" onSubmit={this.onFormSubmit}>
-          <div className="field">
-            <label>Video Search</label>
-            <input
-              type="text"
-              value={this.state.term}
-              onChange={this.onInputChange}
-            />
-          </div>
-        </form>
-        <div role="listitem" className="item">
-          <div className="ui red horizontal label">
-            <i className="power cord icon"></i>API Powered by: YouTube
-          </div>
-        </div>
-      </div>
-    );
+    
   }
 }
 
