@@ -26,7 +26,7 @@ const SearchBar = ({ onFormSubmit }) => {
           <input
             type="text"
             value={term}
-            onChange={this.onInputChange}
+            onChange={onInputChange}
           />
         </div>
       </form>
