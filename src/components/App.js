@@ -32,14 +32,14 @@ const App = () => {
 
     console.log(response);
   };
+
+  const onVideoSelect = (video) => {
+    setState({ selectedVideo: video });
+  };
 };
 
 class App extends React.Component {
 
-
-  onVideoSelect = (video) => {
-    this.setState({ selectedVideo: video });
-  };
 
   render() {
     return (
