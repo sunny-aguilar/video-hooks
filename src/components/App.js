@@ -9,6 +9,7 @@ const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  useVideos("buildings");
 
   // setSelectedVideo(response.data.items[0]);
 
