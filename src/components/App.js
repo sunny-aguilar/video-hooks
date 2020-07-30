@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
@@ -7,16 +7,20 @@ import VideoDetail from "./VideoDetail";
 // YouTube API Key:
 const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { videos: [], selectedVideo: null };
-  }
+const App = () => {
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
+  useEffect(() => {
+    onTermSubmit("scooters");
+  }, []);
+};
+
+class App extends React.Component {
   // loads an initial video on app
   componentDidMount() {
     // initial video term can be changed to any search term
-    this.onTermSubmit("scooters");
+    
   }
 
   // callback for SearchBar
