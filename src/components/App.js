@@ -12,8 +12,6 @@ const App = () => {
 
   // setSelectedVideo(response.data.items[0]);
 
-
-
   return (
     <div className="ui container">
       <SearchBar onFormSubmit={onTermSubmit} />

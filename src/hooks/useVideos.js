@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import youtuve from "../apis/youtube";
 
-const useVideos = () => {
+const useVideos = (defaultSearchTerm) => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    onTermSubmit("scooters");
+    onTermSubmit(defaultSearchTerm);
   }, []);
 
   // callback for SearchBar
