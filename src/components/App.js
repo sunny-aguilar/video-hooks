@@ -33,10 +33,6 @@ const App = () => {
     console.log(response);
   };
 
-  const onVideoSelect = (video) => {
-    setSelectedVideo(video);
-  };
-
   return (
     <div className="ui container">
       <SearchBar onFormSubmit={onTermSubmit} />
