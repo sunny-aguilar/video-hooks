@@ -17,11 +17,7 @@ const App = () => {
 };
 
 class App extends React.Component {
-  // loads an initial video on app
-  componentDidMount() {
-    // initial video term can be changed to any search term
-    
-  }
+
 
   // callback for SearchBar
   onTermSubmit = async (term) => {
