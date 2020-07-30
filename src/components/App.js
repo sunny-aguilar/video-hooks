@@ -39,17 +39,17 @@ const App = () => {
 
   return (
     <div className="ui container">
-      <SearchBar onFormSubmit={this.onTermSubmit} />
+      <SearchBar onFormSubmit={onTermSubmit} />
       {/* prop can be called the same name as function */}
       <div className="ui grid">
         <div className="ui row">
           <div className="eleven wide column">
-            <VideoDetail video={this.state.selectedVideo} />
+            <VideoDetail video={selectedVideo} />
           </div>
           <div className="five wide column">
             <VideoList
-              onVideoSelect={this.onVideoSelect}
-              videos={this.state.videos}
+              onVideoSelect={onVideoSelect}
+              videos={videos}
             />
           </div>
         </div>
@@ -57,11 +57,5 @@ const App = () => {
     </div>
   );
 };
-
-class App extends React.Component {
-  render() {
-    
-  }
-}
 
 export default App;
