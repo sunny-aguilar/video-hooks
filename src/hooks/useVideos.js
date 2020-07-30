@@ -5,7 +5,7 @@ const useVideos = (defaultSearchTerm) => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    onTermSubmit(defaultSearchTerm);
+    search(defaultSearchTerm);
   }, []);
 
   // callback for SearchBar
