@@ -34,7 +34,7 @@ const App = () => {
   };
 
   const onVideoSelect = (video) => {
-    setState({ selectedVideo: video });
+    setSelectedVideo(video);
   };
 };
 
