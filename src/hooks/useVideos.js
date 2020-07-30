@@ -24,7 +24,7 @@ const useVideos = (defaultSearchTerm) => {
     console.log(response);
   };
 
-  return [videos, onTermSubmit];
+  return [videos, search];
 };
 
 export default useVideos;
