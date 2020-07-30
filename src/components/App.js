@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
-import youtube from "../apis/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import useVideos from "../hooks/useVideos";
 
 // YouTube API Key:
 const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
