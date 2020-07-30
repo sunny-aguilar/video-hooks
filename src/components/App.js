@@ -8,30 +8,11 @@ import VideoDetail from "./VideoDetail";
 const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
 
 const App = () => {
-  
   const [selectedVideo, setSelectedVideo] = useState(null);
 
-  useEffect(() => {
-    onTermSubmit("scooters");
-  }, []);
+  // setSelectedVideo(response.data.items[0]);
 
-  // callback for SearchBar
-  const onTermSubmit = async (term) => {
-    const response = await youtube.get("/search", {
-      params: {
-        q: term,
-        key: KEY,
-        part: "snippet",
-        maxResults: 5,
-        type: "video",
-      },
-    });
 
-    setVideos(response.data.items);
-    setSelectedVideo(response.data.items[0]);
-
-    console.log(response);
-  };
 
   return (
     <div className="ui container">
