@@ -14,10 +14,6 @@ const App = () => {
   useEffect(() => {
     onTermSubmit("scooters");
   }, []);
-};
-
-class App extends React.Component {
-
 
   // callback for SearchBar
   onTermSubmit = async (term) => {
@@ -30,13 +26,16 @@ class App extends React.Component {
         type: "video",
       },
     });
-
     console.log(response);
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
     });
   };
+};
+
+class App extends React.Component {
+
 
   onVideoSelect = (video) => {
     this.setState({ selectedVideo: video });
