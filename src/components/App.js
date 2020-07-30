@@ -16,7 +16,7 @@ const App = () => {
   }, []);
 
   // callback for SearchBar
-  onTermSubmit = async (term) => {
+  const onTermSubmit = async (term) => {
     const response = await youtube.get("/search", {
       params: {
         q: term,
