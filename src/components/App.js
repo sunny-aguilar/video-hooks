@@ -8,7 +8,7 @@ import VideoDetail from "./VideoDetail";
 const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
 
 const App = () => {
-  const [videos, setVideos] = useState([]);
+  
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
