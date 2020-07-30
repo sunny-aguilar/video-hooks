@@ -9,13 +9,13 @@ const KEY = "AIzaSyDCIBaO57Z3538VcxlmNRGEvY0K2JA8FV0";
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
-  useVideos("buildings");
+  const [videos, search] = useVideos("buildings");
 
   // setSelectedVideo(response.data.items[0]);
 
   return (
     <div className="ui container">
-      <SearchBar onFormSubmit={onTermSubmit} />
+      <SearchBar onFormSubmit={search} />
       {/* prop can be called the same name as function */}
       <div className="ui grid">
         <div className="ui row">
