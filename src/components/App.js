@@ -31,10 +31,6 @@ const App = () => {
     setSelectedVideo(response.data.items[0]);
 
     console.log(response);
-    this.setState({
-      videos: response.data.items,
-      selectedVideo: response.data.items[0],
-    });
   };
 };
 
