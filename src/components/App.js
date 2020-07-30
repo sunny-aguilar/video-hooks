@@ -26,6 +26,9 @@ const App = () => {
         type: "video",
       },
     });
+
+    setVideos(response.data.items);
+
     console.log(response);
     this.setState({
       videos: response.data.items,
